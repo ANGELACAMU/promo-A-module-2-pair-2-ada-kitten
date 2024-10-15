@@ -52,3 +52,11 @@ const kittenThree = ` <li class="card">
 listKittens.innerHTML = kittenOne + kittenTwo + kittenThree; 
 
           
+const buttonMenu = document.querySelector(".js-btn-add");
+const addCat = document.querySelector(".new-form");
+
+buttonMenu.addEventListener("click", (ev) => {
+  ev.preventDefault();
+
+})
+
