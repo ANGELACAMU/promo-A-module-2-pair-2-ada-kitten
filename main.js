@@ -1,6 +1,6 @@
 "use strict";
 
-document.querySelector(".js-list")
+const listKittens = document.querySelector(".js-list");
 const kittenOne = `<li class="card"> 
 <article>
               <img
@@ -49,5 +49,6 @@ const kittenThree = ` <li class="card">
             </p>
           </li> `;    
           
-          
+listKittens.innerHTML = kittenOne + kittenTwo + kittenThree; 
+
           
