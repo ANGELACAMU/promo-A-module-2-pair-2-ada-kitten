@@ -47,16 +47,35 @@ const kittenThree = ` <li class="card">
               bella mirada se ha convertido en una de sus señas de identidad.
               Sus ojos son grandes y las orejas resultan largas y en punta.
             </p>
-          </li> `;    
-          
-listKittens.innerHTML = kittenOne + kittenTwo + kittenThree; 
+          </li> `;
 
-          
+listKittens.innerHTML = kittenOne + kittenTwo + kittenThree;
+
+
 const buttonMenu = document.querySelector(".js-btn-add");
 const addCat = document.querySelector(".new-form");
+const buttonCancel = document.querySelector(".button-cancel")
+
+
 
 buttonMenu.addEventListener("click", (ev) => {
   ev.preventDefault();
+  addCat.classList.remove('collapsed');
+
+
 
 })
+buttonCancel.addEventListener("click", () => {
+  addCat.classList.add('collapsed');
+}
+)
 
+const searchButton = document.querySelector(".js_button-search");
+
+searchButton.addEventListener("click", (ev) => {
+  ev.preventDefault();
+  const searchB = js_in_search_desc.value;
+  console.log(has hecho click);
+  //¿por qué no funciona?
+}
+)
