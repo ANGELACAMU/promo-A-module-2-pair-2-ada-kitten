@@ -58,24 +58,52 @@ const buttonCancel = document.querySelector(".button-cancel")
 
 
 
-buttonMenu.addEventListener("click", (ev) => {
-  ev.preventDefault();
-  addCat.classList.remove('collapsed');
+// buttonMenu.addEventListener("click", (ev) => {
+//   ev.preventDefault();
+//   addCat.classList.remove('collapsed');
 
 
 
-})
-buttonCancel.addEventListener("click", () => {
-  addCat.classList.add('collapsed');
+// })
+// buttonCancel.addEventListener("click", () => {
+//   addCat.classList.add('collapsed');
+// }
+// )
+
+// const searchButton = document.querySelector(".js_button-search");
+
+// searchButton.addEventListener("click", (ev) => {
+//   ev.preventDefault();
+//   const searchB = js_in_search_desc.value;
+//   console.log(has hecho click);
+//   //¿por qué no funciona?
+// }
+// )
+
+
+//Mostrar el menú cuando la usuaria haga click
+//tiene que mostrar el menú
+//seleccionar el botón del menú
+
+const buttonM = document.querySelector(".js-btn-add");
+const addC = document.querySelector(".new-form");
+
+function showNewCatForm() {
+  addC.classList.remove('collapsed');
 }
-)
-
-const searchButton = document.querySelector(".js_button-search");
-
-searchButton.addEventListener("click", (ev) => {
-  ev.preventDefault();
-  const searchB = js_in_search_desc.value;
-  console.log(has hecho click);
-  //¿por qué no funciona?
+function hideNewCatForm() {
+  addC.classList.add('collapsed');
 }
-)
+// showNewCatForm();
+buttonM.addEventListener('click', showNewCatForm);
+// buttonM.addEventListener('click', hideNewCatForm);
+
+function handleClickNewCatForm(event) {
+  event.preventDeafault();
+  if (addC.classList.contains('collapsed'));
+  addC.classList.remove('collapsed'); {
+  } else {
+    addC.classList.remove('collapsed');
+  }
+}
+
