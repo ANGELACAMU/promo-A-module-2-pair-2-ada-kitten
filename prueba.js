@@ -78,7 +78,7 @@ buttonS.addEventListener("click", (event) => {
     console.log(desc);
 
 })
-
+//EJERCICIO 4
 const kittenImage1 = "https://dev.adalab.es/gato-siames.webp";
 const kittenName1 = "Anastacio";
 const kittenDesc1 =
@@ -96,5 +96,7 @@ const kittenName3 = "Cielo";
 const kittenDesc3 =
     " Tienen la cabeza cuadrada y los ojos simétricos, por lo que su bella mirada se ha convertido en una de sus señas de identidad. Sus ojos son grandes y las orejas resultan largas y en punta..";
 const kittenRace3 = "Maine Coon";
+
+//SOLO ESTÁ HECHA LA PRIMERA PARTE
 
 
