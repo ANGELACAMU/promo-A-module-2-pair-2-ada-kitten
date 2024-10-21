@@ -98,7 +98,43 @@ const kittenDesc3 =
     " Tienen la cabeza cuadrada y los ojos simétricos, por lo que su bella mirada se ha convertido en una de sus señas de identidad. Sus ojos son grandes y las orejas resultan largas y en punta..";
 const kittenRace3 = "Maine Coon";
 
+
+const list =
+    ` <li class="card">
+    <article>
+        <img class="card_img" src=${kittenImage1} alt="siames-cat" />
+        <h3 class="card_title">${kittenName1}</h3>
+        <h4 class="card_race">${kittenRace1}</h4>
+        <p class="card_description">
+            ${kittenDesc1}
+        </p>
+    </article>
+</li>`;
+`<li class="card">
+                    <img class="card_img" src=${kittenImage2} alt="sphynx-cat" />
+                    <h3 class="card_title">${kittenName2}</h3>
+                    <h4 class="card_race">${kittenRace2}</h4>
+                    <p class="card_description">
+                        ${kittenDesc2}
+                    </p>
+                </li>`;
+`<li class="card">
+                    <img class="card_img" src=${kittenImage3} alt="maine-coon-cat" />
+                    <h3 class="card_title">${kittenName3}</h3>
+                    <h4 class="card_race">${kittenRace3}</h4>
+                    <p class="card_description">
+                       ${kittenDesc3}
+                    </p>
+                </li>`;
+const listContainer = document.querySelector(".js-list");
+listContainer.innerHTML = list;
+
+//list.innerHTML = kittenOne + kittenTwo + kittenThree;
+
+
 //SOLO ESTÁ HECHA LA PRIMERA PARTE
+
+//EJERCICIO 5
 
 //EJERCICIO 6
 
