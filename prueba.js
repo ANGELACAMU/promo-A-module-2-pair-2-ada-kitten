@@ -53,18 +53,14 @@ Agrega un evento click a este botón.
 */
 
 
-//¿POR QUÉ NO FUNCIONA?
-// const button = document.querySelector(".js-btn-add");
-// const list = document.querySelector(".new-form");
-
-// button.addEventListener("click", (event) => {
-//     event.preventDefault();
-//     console.log("has hecho click");
-//     const form = document.querySelector(".js-new-form");
-
-//     form.classList.remove("collapsed");
-
-// })
+const button = document.querySelector(".js-btn-add");
+const list1 = document.querySelector(".new-form");
+button.addEventListener("click", (event) => {
+    event.preventDefault();
+    console.log("has hecho click");
+    const form = document.querySelector(".js-new-form");
+    form.classList.remove("collapsed");
+})
 
 //EJERCICIO 3 FILTRAR
 
@@ -127,9 +123,11 @@ const list = document.querySelector (".js-list")
                     </p>
                 </li>`;
 
-//SOLO ESTÁ HECHA LA PRIMERA PARTE
 
 //EJERCICIO 5
+
+
+
 
 //EJERCICIO 6
 
