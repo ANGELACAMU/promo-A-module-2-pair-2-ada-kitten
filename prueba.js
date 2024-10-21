@@ -76,6 +76,7 @@ buttonS.addEventListener("click", (event) => {
     console.log("ha hecho click");
     const desc = inputDesc.value;
     console.log(desc);
+    //solo se nos ve en la consola, que falta????
 
 })
 //EJERCICIO 4
@@ -98,5 +99,9 @@ const kittenDesc3 =
 const kittenRace3 = "Maine Coon";
 
 //SOLO ESTÁ HECHA LA PRIMERA PARTE
+
+//EJERCICIO 6
+
+
 
 

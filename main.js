@@ -79,26 +79,30 @@ const kittenThree = ` <li class="card">
 //tiene que mostrar el menú
 //seleccionar el botón del menú
 
-// const buttonM = document.querySelector(".js-btn-add");
-// const addC = document.querySelector(".new-form");
+const buttonM = document.querySelector(".js-btn-add");
+const addC = document.querySelector(".new-form");
 
-// function showNewCatForm() {
-//   addC.classList.remove("collapsed");
-// }
-// function hideNewCatForm() {
-//   addC.classList.add("collapsed");
-// }
-// function handleClickNewCatForm() {
-//   if showNewCatForm();
-//   else hideNewCatForm();
-// }
+function showNewCatForm() {
+  addC.classList.remove("collapsed");
+}
+function hideNewCatForm() {
+  addC.classList.add("collapsed");
+}
+function handleClickNewCatForm() {
+  if (addC.classList.contains("collapsed")) {
+    showNewCatForm();
+  } else {
+    hideNewCatForm();
+  }
 
-// buttonM.addEventListener("click", handleClickNewCatForm);
+}
+
+buttonM.addEventListener("click", handleClickNewCatForm);
 
 
 
 
-const search = document.querySelector(".js_button-search");
+const buttonSearch = document.querySelector(".js_button-search");
 const desc = document.querySelector("js_in_search_desc");
 
 search.addEventListener("click", (ev) => {
@@ -106,20 +110,18 @@ search.addEventListener("click", (ev) => {
   const descSearchText = desc.value;
   console.log("has hecho click");
   console.log("Texto de búsqueda:", descSearchText);
+  const buttonSearch = document.querySelector('.js-button-search');
+  buttonSearch.addEventListener('click', filterKitten);
 
 }); /*
 ¿que falta?
  */
 
 const kittenOneDesc =
-  "Porte elegante, su patrón de color tan característico y sus ojos de un azul intenso, pero su historia se remonta a Asía al menos
-hace 500 años, donde tuvo su origen muy posiblemente." 
+  "Porte elegante, su patrón de color tan característico y sus ojos de un azul intenso, pero su historia se remonta a Asía al menoshace 500 años, donde tuvo su origen muy posiblemente."
 
-const kittenTwoDesc = "Produce fascinación y curiosidad. Exótico, raro, bello, extraño…
-              hasta con pinta de alienígena han llegado a definir a esta raza
-              gatuna que se caracteriza por la «ausencia» de pelo."
+const kittenTwoDesc = "Produce fascinación y curiosidad. Exótico, raro, bello, extraño…hasta con pinta de alienígena han llegado a definir a esta razagatuna que se caracteriza por la «ausencia» de pelo."
 
 
-const kittenThreeDesc = "Tienen la cabeza cuadrada y los ojos simétricos, por lo que su
-              bella mirada se ha convertido en una de sus señas de identidad.
-              Sus ojos son grandes y las orejas resultan largas y en punta."
+const kittenThreeDesc = "Tienen la cabeza cuadrada y los ojos simétricos, por lo que subella mirada se ha convertido en una de sus señas de identidad.Sus ojos son grandes y las orejas resultan largas y en punta."
+
