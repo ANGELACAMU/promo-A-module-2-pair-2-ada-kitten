@@ -59,7 +59,7 @@ button.addEventListener("click", (event) => {
     event.preventDefault();
     console.log("has hecho click");
     const form = document.querySelector(".js-new-form");
-    form.classList.remove("collapsed");
+    form.classList.toggle("collapsed");
 })
 
 //EJERCICIO 3 FILTRAR
@@ -93,10 +93,6 @@ buttonS.addEventListener("click", (event) => {
 // const kittenDesc3 =
 //     " Tienen la cabeza cuadrada y los ojos simétricos, por lo que su bella mirada se ha convertido en una de sus señas de identidad. Sus ojos son grandes y las orejas resultan largas y en punta..";
 // const kittenRace3 = "Maine Coon";
-
-const list = document.querySelector (".js-list")
-
-
 const kittenData_1 = {
     image: "https://dev.adalab.es/gato-siames.webp",
     name: "Anastacio",
@@ -118,40 +114,30 @@ const kittenData_3 = {
     race: "Maine Coon",
 }
 
-function renderKitten (kittenData) {
-    list.innerHTML =
-    ` <li class="card">
+const list = document.querySelector(".js-list")
+
+const kittenDataList = [kittenData_1, kittenData_2, kittenData_3];
+
+
+
+
+function renderKitten(kittenData) {
+    return ` <li class="card">
     <article>
-        <img class="card_img" src=${kittenData_1.image} alt="siames-cat" />
-        <h3 class="card_title">${kittenData_1.name}</h3>
-        <h4 class="card_race">${kittenData_1.race}</h4>
+        <img class="card_img" src=${kittenData.image} alt="siames-cat" />
+        <h3 class="card_title">${kittenData.name}</h3>
+        <h4 class="card_race">${kittenData.race}</h4>
         <p class="card_description">
-            ${kittenData_1.desc}
+            ${kittenData.desc}
         </p>
     </article>
         </li>`;
-
-    `<li class="card">
-                <img class="card_img" src=${kittenData_2.image}alt="sphynx-cat" />
-                <h3 class="card_title">${kittenData_2.name}</h3>
-                <h4 class="card_race">${kittenData_2.race}</h4>
-                <p class="card_description">
-                    ${kittenData_2.desc}
-                </p>
-                </li>`;
-   
-    `<li class="card">
-                    <img class="card_img" src=${kittenData_3.image} alt="maine-coon-cat" />
-                    <h3 class="card_title">${kittenData_3.name}</h3>
-                    <h4 class="card_race">${kittenData_3.race}</h4>
-                    <p class="card_description">
-                       ${kittenData_3.desc}
-                    </p>
-               </li>`;
-
-               renderKitten (kittenData);
 }
-list.innerHTML = renderKitten;
+
+list.innerHTML = renderKitten(kittenDataList[0]) + renderKitten(kittenDataList[1]) + renderKitten(kittenDataList[2]);
+
+
+
 
 
 
@@ -168,6 +154,6 @@ list.innerHTML = renderKitten;
 //EJERCICIO 7
 
 //Pasos humano
-// - Crear objetos para cada gato 
+// - Crear objetos para cada gato
 // - Modificar la funcion (parametros)
 
