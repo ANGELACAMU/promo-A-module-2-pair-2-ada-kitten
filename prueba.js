@@ -134,7 +134,21 @@ function renderKitten(kittenData) {
         </li>`;
 }
 
-list.innerHTML = renderKitten(kittenDataList[0]) + renderKitten(kittenDataList[1]) + renderKitten(kittenDataList[2]);
+// list.innerHTML = renderKitten(kittenDataList[0]) + renderKitten(kittenDataList[1]) + renderKitten(kittenDataList[2]);
+
+
+// EJERCICIO 9
+
+// Por cada elemento del array de los gatitos
+  // pinto un li en el html con la informacion del gatito
+
+
+for (const kitten of kittenDataList) {
+    debugger
+    console.log (kitten)
+    list.innerHTML += renderKitten (kitten)
+}
+
 
 
 
